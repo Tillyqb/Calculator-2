@@ -23,6 +23,23 @@ def calculator(input_string):
         elif string_as_list[0] == '-':
             print(subtract(float(string_as_list[1]), float(string_as_list[2])))
             input_string = input('???')
+        elif string_as_list[0] == '/':
+            print(divide(float(string_as_list[1]), float(string_as_list[2])))
+            input_string = input('???')  
+        elif string_as_list[0] == 'square':
+            print(square(float(string_as_list[1])))
+            input_string = input('???') 
+        elif string_as_list[0] == 'cube':
+            print(cube(float(string_as_list[1])))
+            input_string = input('???')  
+        elif string_as_list[0] == 'mod':
+            print(mod(float(string_as_list[1]), float(string_as_list[2])))
+            input_string = input('???')
+        elif string_as_list[0] == '*':
+            print(multiply(float(string_as_list[1]), float(string_as_list[2])))
+            input_string = input('???')
+        else:
+            input_string = input('Please provide relevant arguments.')
 
 input_string = input('???')
 calculator(input_string)
