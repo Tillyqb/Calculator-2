@@ -20,6 +20,9 @@ def calculator(input_string):
         elif string_as_list[0] == '+':
             print(add(float(string_as_list[1]), float(string_as_list[2])))
             input_string = input('???')
+        elif string_as_list[0] == '-':
+            print(subtract(float(string_as_list[1]), float(string_as_list[2])))
+            input_string = input('???')
 
 input_string = input('???')
 calculator(input_string)
