@@ -17,8 +17,9 @@ def calculator(input_string):
         elif string_as_list[0] == 'pow':
             print(power(float(string_as_list[1]), float(string_as_list[2])))
             input_string = input('???')
-        
-    return 0
+        elif string_as_list[0] == '+':
+            print(add(float(string_as_list[1]), float(string_as_list[2])))
+            input_string = input('???')
 
 input_string = input('???')
 calculator(input_string)
